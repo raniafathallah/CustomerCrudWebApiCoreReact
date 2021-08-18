@@ -14,8 +14,8 @@ namespace CustomerCrudWebApiCoreReact.Models
         {
 
         }
-        public DbSet<Customer> customers;
+        public DbSet<Customer> Customers;
         public DbSet<CustomerCrudWebApiCoreReact.Models.Customer> Customer { get; set; }
-    
+  
     }
 }
