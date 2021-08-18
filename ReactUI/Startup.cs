@@ -64,7 +64,7 @@ namespace ReactUI
 
                 if (env.IsDevelopment())
                 {
-                    spa.Options.StartupTimeout = TimeSpan.FromSeconds(120);
+                    spa.Options.StartupTimeout = TimeSpan.FromSeconds(240);
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
