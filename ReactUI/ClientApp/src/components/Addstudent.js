@@ -20,6 +20,7 @@ class Addstudent extends React.Component {
         })
             .then(json => {
                 if (json.status === 201) {
+                    debugger;
                     console.log(json.data);
                     alert("Data Save Successfully");
                     this.props.history.push('/Studentlist');
@@ -27,7 +28,7 @@ class Addstudent extends React.Component {
                 else {
                     console.log(json.data.Status);
                     alert('Data not Saved');
-                    debugger;
+                    //debugger;
                     this.props.history.push('/Studentlist');
                 }
             })
