@@ -4,6 +4,7 @@ import axios from 'axios';
 import Contact from './Table';
 
 
+
 export default class Studentlist extends React.Component  {
   
     constructor(props) {
@@ -40,7 +41,9 @@ export default class Studentlist extends React.Component  {
 
                 console.error('There was an error!', error);
             });
-    
+          setTimeout(() => {
+            this.props.history.push('/Studentlist');
+        }, 6000);
         // this.props.history.push('/Studentlist');
     }
     render() {
